@@ -1,0 +1,26 @@
+{
+  "name": "@mre-delegate-fail/jobs",
+  "version": "0.0.1",
+  "description": "Run txs in sequence as tests or deployments",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "rm -rf dist && tsc --build",
+    "start": "node dist/src/index.js"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "main": "dist/index.js",
+    "typings": "dist/src/index.d.ts"
+  },
+  "dependencies": {
+    "@mre-delegate-fail/kio": "workspace:^",
+    "@mre-delegate-fail/tx": "workspace:^",
+    "commander": "^12.1.0",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0"
+  }
+}

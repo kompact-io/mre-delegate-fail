@@ -1,0 +1,17 @@
+name = "waalge/mre-delegate-fail"
+version = "0.0.0"
+compiler = "v1.0.29-alpha"
+plutus = "v2"
+license = "Apache-2.0"
+description = "Aiken contracts for project 'mre-delegate-fail'"
+
+[repository]
+user = "waalge"
+project = "mre-delegate-fail"
+platform = "github"
+
+[[dependencies]]
+name = "aiken-lang/stdlib"
+version = "1.9.0"
+source = "github"
+
