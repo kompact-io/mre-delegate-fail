@@ -37,7 +37,7 @@ async function sequenceInner(
       (bail: any) => {
         return Promise.resolve(txb()).then(finish);
       },
-      { retries: 3 },
+      { retries: 1 },
     );
     if (txHash == undefined) {
       console.error("Tx failure");
